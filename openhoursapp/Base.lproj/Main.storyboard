@@ -40,12 +40,16 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="dMj-iC-iq1"/>
                                 </constraints>
-                                <color key="barTintColor" red="0.10653776399999999" green="0.73882819700000002" blue="0.57879470160000002" alpha="0.66872306034482754" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.10653776399999999" green="0.73882819700000002" blue="0.57879470160000002" alpha="0.62812500000000004" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="27"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="LVL1" id="5fu-BK-Apg"/>
+                                    <navigationItem title="LVL1" id="5fu-BK-Apg">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="L9L-G5-36c">
+                                            <color key="tintColor" cyan="0.75" magenta="0.024741748349999999" yellow="0.44105848669999997" black="0.25548260690000002" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
