@@ -45,7 +45,7 @@
                                     <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="27"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Open Hours" id="5fu-BK-Apg"/>
+                                    <navigationItem title="LVL1" id="5fu-BK-Apg"/>
                                 </items>
                             </navigationBar>
                         </subviews>
