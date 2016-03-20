@@ -9,7 +9,7 @@
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="openhoursapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="SignInViewController" customModule="openhoursapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -28,19 +28,33 @@
                                     <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="27"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="LVL1" id="5fu-BK-Apg">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="L9L-G5-36c">
-                                            <color key="tintColor" cyan="0.75" magenta="0.024741748349999999" yellow="0.44105848669999997" black="0.25548260690000002" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="LVL1" id="5fu-BK-Apg"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="LVL1 Open Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfM-xE-a6i">
+                                <rect key="frame" x="141" y="130" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEN-JY-Mhf">
+                                <rect key="frame" x="70" y="206" width="280" height="65"/>
+                                <state key="normal" title="Log In with Twitter">
+                                    <color key="titleColor" red="0.86274509799999999" green="0.16862745100000001" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="31j-C8-I5S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lEN-JY-Mhf" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="8XS-bV-rwR"/>
+                            <constraint firstItem="lEN-JY-Mhf" firstAttribute="top" secondItem="CfM-xE-a6i" secondAttribute="bottom" constant="55" id="9eQ-sV-R0l"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AU9-Lk-4yo" secondAttribute="trailing" constant="-20" id="Bbl-i1-WQr"/>
                             <constraint firstItem="AU9-Lk-4yo" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="CNC-8J-Yhe"/>
                             <constraint firstItem="AU9-Lk-4yo" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="tlF-pj-hNq"/>
+                            <constraint firstItem="CfM-xE-a6i" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="vXf-cB-yzk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
