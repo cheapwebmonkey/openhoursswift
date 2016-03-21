@@ -18,33 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEN-JY-Mhf">
-                                <rect key="frame" x="121" y="218" width="179" height="39"/>
-                                <color key="backgroundColor" red="0.86274509799999999" green="0.16862745100000001" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="signInTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="31j-C8-I5S"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Open Hours" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfM-xE-a6i">
                                 <rect key="frame" x="111" y="135" width="192" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsb-MI-iV9">
-                                <rect key="frame" x="138" y="394" width="139" height="45"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEN-JY-Mhf">
+                                <rect key="frame" x="87" y="188" width="240" height="39"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.16862745100000001" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Post Hours">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="31j-C8-I5S"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(log in with Twitter to post)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk2-8u-qgF">
+                                <rect key="frame" x="59" y="235" width="296" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="296" id="GYC-kT-xz3"/>
+                                    <constraint firstAttribute="height" constant="17" id="vzA-wG-fu6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="lEN-JY-Mhf" secondAttribute="trailing" constant="97" id="2J4-Eq-yM0"/>
+                            <constraint firstItem="lEN-JY-Mhf" firstAttribute="top" secondItem="CfM-xE-a6i" secondAttribute="bottom" constant="14" id="8W9-iN-oOO"/>
                             <constraint firstItem="lEN-JY-Mhf" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="8XS-bV-rwR"/>
+                            <constraint firstItem="lEN-JY-Mhf" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="67" id="8jd-qq-nz2"/>
+                            <constraint firstItem="Nk2-8u-qgF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="39" id="9RK-NT-oVz"/>
                             <constraint firstItem="lEN-JY-Mhf" firstAttribute="top" secondItem="CfM-xE-a6i" secondAttribute="bottom" constant="55" id="9eQ-sV-R0l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nk2-8u-qgF" secondAttribute="trailing" constant="39" id="L9e-6d-Ecb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lEN-JY-Mhf" secondAttribute="trailing" constant="67" id="NM0-f9-swF"/>
+                            <constraint firstItem="lEN-JY-Mhf" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="98" id="Qw4-A1-wYz"/>
+                            <constraint firstItem="lEN-JY-Mhf" firstAttribute="top" secondItem="CfM-xE-a6i" secondAttribute="bottom" constant="173" id="X8c-Ur-xSA"/>
+                            <constraint firstItem="Nk2-8u-qgF" firstAttribute="top" secondItem="lEN-JY-Mhf" secondAttribute="bottom" constant="8" id="svh-Y4-zY6"/>
                             <constraint firstItem="CfM-xE-a6i" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="vXf-cB-yzk"/>
                         </constraints>
                     </view>
