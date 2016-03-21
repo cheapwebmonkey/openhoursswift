@@ -61,17 +61,17 @@
                     <navigationItem key="navigationItem" id="DR7-PO-a0o"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <segue destination="mSC-yu-3g3" kind="show" id="ag6-Am-yOr"/>
+                        <segue destination="mSC-yu-3g3" kind="show" identifier="chooseAccountSegue" id="ag6-Am-yOr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Account View Controller-->
         <scene sceneID="col-gE-Ted">
             <objects>
-                <viewController id="mSC-yu-3g3" sceneMemberID="viewController">
+                <viewController id="mSC-yu-3g3" customClass="SelectAccountViewController" customModule="openhoursapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vHs-jx-MjX"/>
                         <viewControllerLayoutGuide type="bottom" id="w56-an-4ub"/>

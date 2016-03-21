@@ -21,6 +21,7 @@
 		B61BB9B71C9B9D7000EFCE35 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61BB9B61C9B9D7000EFCE35 /* HomeKit.framework */; };
 		B61BB9BA1C9B9DAA00EFCE35 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61BB9B91C9B9DAA00EFCE35 /* PassKit.framework */; };
 		B61BB9BC1C9B9DC800EFCE35 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61BB9BB1C9B9DC800EFCE35 /* ExternalAccessory.framework */; };
+		B6CFB9CC1C9F88B700230029 /* SelectAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFB9CB1C9F88B700230029 /* SelectAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B61BB9B81C9B9D8C00EFCE35 /* openhoursapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = openhoursapp.entitlements; sourceTree = "<group>"; };
 		B61BB9B91C9B9DAA00EFCE35 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		B61BB9BB1C9B9DC800EFCE35 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		B6CFB9CB1C9F88B700230029 /* SelectAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				B61BB9B81C9B9D8C00EFCE35 /* openhoursapp.entitlements */,
 				B61BB9981C9B9D0D00EFCE35 /* AppDelegate.swift */,
 				B61BB99A1C9B9D0D00EFCE35 /* SignInViewController.swift */,
+				B6CFB9CB1C9F88B700230029 /* SelectAccountViewController.swift */,
 				B61BB99C1C9B9D0D00EFCE35 /* SecondViewController.swift */,
 				B61BB99E1C9B9D0D00EFCE35 /* Main.storyboard */,
 				B61BB9A11C9B9D0D00EFCE35 /* Assets.xcassets */,
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CFB9CC1C9F88B700230029 /* SelectAccountViewController.swift in Sources */,
 				B61BB99D1C9B9D0D00EFCE35 /* SecondViewController.swift in Sources */,
 				B61BB9991C9B9D0D00EFCE35 /* AppDelegate.swift in Sources */,
 				B61BB99B1C9B9D0D00EFCE35 /* SignInViewController.swift in Sources */,

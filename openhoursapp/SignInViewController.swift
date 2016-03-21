@@ -41,11 +41,23 @@ class SignInViewController: UIViewController {
                     print("they only have one use it")
                 }else {
                     print("They have more than one, lets ask")
+                    dispatch_async(dispatch_get_main_queue()
+                        , { () -> Void in
+                             self.performSegueWithIdentifier("chooseAccountSegue", sender: allAccounts)
+                    })
+                   
                 }
             } else {
                 print("Nah")
             }
         
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "chooseAccountSegue" {
+            let selectVC = segue.destinationViewController as! SelectAccountViewController
+            selectVC.accounts = sender as! [ACAccount]
         }
     }
 }
