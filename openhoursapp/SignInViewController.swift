@@ -34,7 +34,14 @@ class SignInViewController: UIViewController {
         account.requestAccessToAccountsWithType(accountTypeTwitter, options: nil) { (granted :Bool, error :NSError!) -> Void in
             
             if granted{
-                print("Yay")
+                let allAccounts = account.accountsWithAccountType(accountTypeTwitter)
+                if allAccounts.count <= 0 {
+                    print("no accounts")
+                }else if allAccounts.count == 1 {
+                    print("they only have one use it")
+                }else {
+                    print("They have more than one, lets ask")
+                }
             } else {
                 print("Nah")
             }
