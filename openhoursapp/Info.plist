@@ -4,9 +4,17 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MKDirectionsRequest</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.maps.directionsrequest</string>
+			</array>
 			<key>NSAppTransportSecurity</key>
 			<dict>
 				<key>NSExceptionDomains</key>
@@ -22,12 +30,6 @@
 					</dict>
 				</dict>
 			</dict>
-			<key>CFBundleTypeName</key>
-			<string>MKDirectionsRequest</string>
-			<key>LSItemContentTypes</key>
-			<array>
-				<string>com.apple.maps.directionsrequest</string>
-			</array>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
@@ -46,6 +48,33 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>b8d7a8ef98ef1fa3ca6a8b57728a32dc6c3bf889</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Answers</string>
+			</dict>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>s6qOQMqKppBAZ5mlNCYZqlPgI</string>
+					<key>consumerSecret</key>
+					<string>3gnx89pr4uohCdEMjR8eX0uI1n3i1gyxvYurAOV6uwNwCvFDJk</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+		</array>
+	</dict>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MKDirectionsApplicationSupportedModes</key>
@@ -56,14 +85,15 @@
 		<string>MKDirectionsModePedestrian</string>
 		<string>MKDirectionsModeTaxi</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Locating spaces near device in use</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Locating any spaces near device</string>
-	<key>CFBundleDisplayName</key>
-	<string></string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Locating spaces near device in use</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -95,10 +125,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

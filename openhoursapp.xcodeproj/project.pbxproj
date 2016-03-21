@@ -21,6 +21,11 @@
 		B61BB9B71C9B9D7000EFCE35 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61BB9B61C9B9D7000EFCE35 /* HomeKit.framework */; };
 		B61BB9BA1C9B9DAA00EFCE35 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61BB9B91C9B9DAA00EFCE35 /* PassKit.framework */; };
 		B61BB9BC1C9B9DC800EFCE35 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61BB9BB1C9B9DC800EFCE35 /* ExternalAccessory.framework */; };
+		B6894ECE1CA096C100483AB1 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6894ECC1CA096C100483AB1 /* Fabric.framework */; };
+		B6894ECF1CA096C100483AB1 /* Answers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6894ECD1CA096C100483AB1 /* Answers.framework */; };
+		B6894ED31CA0980100483AB1 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6894ED01CA0980100483AB1 /* TwitterKit.framework */; };
+		B6894ED41CA0980100483AB1 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6894ED11CA0980100483AB1 /* TwitterKitResources.bundle */; };
+		B6894ED51CA0980100483AB1 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6894ED21CA0980100483AB1 /* TwitterCore.framework */; };
 		B6CFB9CC1C9F88B700230029 /* SelectAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFB9CB1C9F88B700230029 /* SelectAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +47,11 @@
 		B61BB9B81C9B9D8C00EFCE35 /* openhoursapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = openhoursapp.entitlements; sourceTree = "<group>"; };
 		B61BB9B91C9B9DAA00EFCE35 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		B61BB9BB1C9B9DC800EFCE35 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		B6894ECC1CA096C100483AB1 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		B6894ECD1CA096C100483AB1 /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Answers.framework; sourceTree = "<group>"; };
+		B6894ED01CA0980100483AB1 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		B6894ED11CA0980100483AB1 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		B6894ED21CA0980100483AB1 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		B6CFB9CB1C9F88B700230029 /* SelectAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,11 +60,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6894ECF1CA096C100483AB1 /* Answers.framework in Frameworks */,
+				B6894ED51CA0980100483AB1 /* TwitterCore.framework in Frameworks */,
 				B61BB9B71C9B9D7000EFCE35 /* HomeKit.framework in Frameworks */,
 				B61BB9B51C9B9D6800EFCE35 /* CoreBluetooth.framework in Frameworks */,
 				B61BB9B31C9B9D4E00EFCE35 /* PushKit.framework in Frameworks */,
 				B61BB9B11C9B9D4500EFCE35 /* CoreData.framework in Frameworks */,
+				B6894ED31CA0980100483AB1 /* TwitterKit.framework in Frameworks */,
 				B61BB9AF1C9B9D3B00EFCE35 /* CoreLocation.framework in Frameworks */,
+				B6894ECE1CA096C100483AB1 /* Fabric.framework in Frameworks */,
 				B61BB9AD1C9B9D3400EFCE35 /* MapKit.framework in Frameworks */,
 				B61BB9BC1C9B9DC800EFCE35 /* ExternalAccessory.framework in Frameworks */,
 				B61BB9BA1C9B9DAA00EFCE35 /* PassKit.framework in Frameworks */,
@@ -67,6 +81,11 @@
 		B61BB98C1C9B9D0D00EFCE35 = {
 			isa = PBXGroup;
 			children = (
+				B6894ED01CA0980100483AB1 /* TwitterKit.framework */,
+				B6894ED11CA0980100483AB1 /* TwitterKitResources.bundle */,
+				B6894ED21CA0980100483AB1 /* TwitterCore.framework */,
+				B6894ECC1CA096C100483AB1 /* Fabric.framework */,
+				B6894ECD1CA096C100483AB1 /* Answers.framework */,
 				B61BB9BB1C9B9DC800EFCE35 /* ExternalAccessory.framework */,
 				B61BB9B91C9B9DAA00EFCE35 /* PassKit.framework */,
 				B61BB9B61C9B9D7000EFCE35 /* HomeKit.framework */,
@@ -114,6 +133,9 @@
 				B61BB9911C9B9D0D00EFCE35 /* Sources */,
 				B61BB9921C9B9D0D00EFCE35 /* Frameworks */,
 				B61BB9931C9B9D0D00EFCE35 /* Resources */,
+				B6894EC91CA0939B00483AB1 /* ShellScript */,
+				B6894ECA1CA093C600483AB1 /* ShellScript */,
+				B6894ECB1CA093E100483AB1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -177,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6894ED41CA0980100483AB1 /* TwitterKitResources.bundle in Resources */,
 				B61BB9A51C9B9D0D00EFCE35 /* LaunchScreen.storyboard in Resources */,
 				B61BB9A21C9B9D0D00EFCE35 /* Assets.xcassets in Resources */,
 				B61BB9A01C9B9D0D00EFCE35 /* Main.storyboard in Resources */,
@@ -184,6 +207,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6894EC91CA0939B00483AB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run b8d7a8ef98ef1fa3ca6a8b57728a32dc6c3bf889 3381526d80ad3fffcfdfd5cca8571dd63026c1dd3475ea0a141ec02869fcf9b0";
+		};
+		B6894ECA1CA093C600483AB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run b8d7a8ef98ef1fa3ca6a8b57728a32dc6c3bf889 3381526d80ad3fffcfdfd5cca8571dd63026c1dd3475ea0a141ec02869fcf9b0";
+		};
+		B6894ECB1CA093E100483AB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run b8d7a8ef98ef1fa3ca6a8b57728a32dc6c3bf889 3381526d80ad3fffcfdfd5cca8571dd63026c1dd3475ea0a141ec02869fcf9b0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B61BB9911C9B9D0D00EFCE35 /* Sources */ = {
@@ -309,6 +374,10 @@
 				CODE_SIGN_ENTITLEMENTS = openhoursapp/openhoursapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = openhoursapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheapwebmonkey.openhoursapp;
@@ -324,6 +393,10 @@
 				CODE_SIGN_ENTITLEMENTS = openhoursapp/openhoursapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = openhoursapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheapwebmonkey.openhoursapp;
