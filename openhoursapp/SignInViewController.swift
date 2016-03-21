@@ -60,5 +60,10 @@ class SignInViewController: UIViewController {
             selectVC.accounts = sender as! [ACAccount]
         }
     }
+    //move to other VC
+    func moveToViewControllerWithAccount(account :ACAccount){
+        print("Yaaassssss")
+
+    }
 }
 

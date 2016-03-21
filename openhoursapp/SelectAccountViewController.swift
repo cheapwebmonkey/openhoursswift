@@ -35,5 +35,18 @@ class SelectAccountViewController: UIViewController, UITableViewDataSource, UITa
         cell.textLabel?.text = account.username
         return cell
     }
-
+    
+    //selection of account
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let account = self.accounts[indexPath.row]
+        let navigationVC = self.presentingViewController as! UINavigationController
+        let signInVC = navigationVC.viewControllers[0] as! SignInViewController
+        
+        self.dismissViewControllerAnimated(true) { () -> Void in
+             signInVC.moveToViewControllerWithAccount(account)
+            
+        }
+       
+    }
+    
 }
