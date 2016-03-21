@@ -37,9 +37,12 @@ class SignInViewController: UIViewController {
                 let allAccounts = account.accountsWithAccountType(accountTypeTwitter)
                 if allAccounts.count <= 0 {
                     print("no accounts")
-                }else if allAccounts.count == 1 {
-                    print("they only have one use it")
-                }else {
+                } else if allAccounts.count == 1 {
+                    dispatch_async(dispatch_get_main_queue()
+                        , { () -> Void in
+                            self.performSegueWithIdentifier("SecondViewController", sender: allAccounts.first)
+                    })
+                } else {
                     print("They have more than one, lets ask")
                     dispatch_async(dispatch_get_main_queue()
                         , { () -> Void in
@@ -59,10 +62,14 @@ class SignInViewController: UIViewController {
             let selectVC = segue.destinationViewController as! SelectAccountViewController
             selectVC.accounts = sender as! [ACAccount]
         }
+        if segue.identifier == "SecondViewController" {
+            let secondVC = segue.destinationViewController as! SecondViewController
+            secondVC.account = (sender as! ACAccount)
+        }
     }
     //move to other VC
     func moveToViewControllerWithAccount(account :ACAccount){
-        print("Yaaassssss")
+        self.performSegueWithIdentifier("SecondViewController", sender: account)
 
     }
 }

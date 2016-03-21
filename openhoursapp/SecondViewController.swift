@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Accounts
+import Social
 
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var webview: UIWebView!
+    
+    var account : ACAccount?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -62,6 +62,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <segue destination="mSC-yu-3g3" kind="modal" identifier="chooseAccountSegue" id="ag6-Am-yOr"/>
+                        <segue destination="8rJ-Kc-sve" kind="show" identifier="SecondViewController" id="tOO-C7-KSv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -100,12 +101,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="tableView" destination="oAB-uL-9YZ" id="itY-7c-YEk"/>
-                        <segue destination="8rJ-Kc-sve" kind="show" id="57a-vs-Yze"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r0E-Yx-9UM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="-320"/>
+            <point key="canvasLocation" x="1374" y="-168"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -121,9 +121,9 @@
                         <subviews>
                             <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7q-5U-bYN">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.10653776399999999" green="0.73882819700000002" blue="0.57879470160000002" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <navigationBar contentMode="scaleToFill" shadowImage="second" translatesAutoresizingMaskIntoConstraints="NO" id="6nP-dh-l8Z">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nP-dh-l8Z">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="XrA-Hu-Olq"/>
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="624"/>
+            <point key="canvasLocation" x="875" y="571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vnp-6Q-ND4">
