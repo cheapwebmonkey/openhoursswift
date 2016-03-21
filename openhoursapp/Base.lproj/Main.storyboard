@@ -18,30 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" shadowImage="second" translatesAutoresizingMaskIntoConstraints="NO" id="AU9-Lk-4yo">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="dMj-iC-iq1"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.10653776399999999" green="0.73882819700000002" blue="0.57879470160000002" alpha="0.62812500000000004" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="27"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="LVL1" id="5fu-BK-Apg"/>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Open Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfM-xE-a6i">
-                                <rect key="frame" x="141" y="130" width="142" height="39"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEN-JY-Mhf">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEN-JY-Mhf">
                                 <rect key="frame" x="121" y="218" width="179" height="39"/>
                                 <color key="backgroundColor" red="0.86274509799999999" green="0.16862745100000001" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 </state>
@@ -49,14 +30,17 @@
                                     <action selector="signInTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="31j-C8-I5S"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Open Hours" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfM-xE-a6i">
+                                <rect key="frame" x="111" y="135" width="192" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lEN-JY-Mhf" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="8XS-bV-rwR"/>
                             <constraint firstItem="lEN-JY-Mhf" firstAttribute="top" secondItem="CfM-xE-a6i" secondAttribute="bottom" constant="55" id="9eQ-sV-R0l"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AU9-Lk-4yo" secondAttribute="trailing" constant="-20" id="Bbl-i1-WQr"/>
-                            <constraint firstItem="AU9-Lk-4yo" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="CNC-8J-Yhe"/>
-                            <constraint firstItem="AU9-Lk-4yo" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="tlF-pj-hNq"/>
                             <constraint firstItem="CfM-xE-a6i" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="vXf-cB-yzk"/>
                         </constraints>
                     </view>
@@ -64,7 +48,7 @@
                     <navigationItem key="navigationItem" id="DR7-PO-a0o"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <segue destination="mSC-yu-3g3" kind="modal" identifier="chooseAccountSegue" id="ag6-Am-yOr"/>
+                        <segue destination="mSC-yu-3g3" kind="presentation" identifier="chooseAccountSegue" id="ag6-Am-yOr"/>
                         <segue destination="8rJ-Kc-sve" kind="show" identifier="SecondViewController" id="tOO-C7-KSv"/>
                     </connections>
                 </viewController>
@@ -122,16 +106,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7q-5U-bYN">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7q-5U-bYN">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <color key="backgroundColor" red="0.10653776399999999" green="0.73882819700000002" blue="0.57879470160000002" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="X7q-5U-bYN" secondAttribute="bottom" id="1Rf-Ua-Y34"/>
+                            <constraint firstItem="X7q-5U-bYN" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="5dF-BZ-V7V"/>
+                            <constraint firstItem="X7q-5U-bYN" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="20" id="RxZ-qe-FSe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X7q-5U-bYN" secondAttribute="trailing" constant="-20" id="UHj-EP-EbR"/>
                             <constraint firstItem="X7q-5U-bYN" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="Wzi-VL-lVY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="X7q-5U-bYN" secondAttribute="trailing" constant="-20" id="bxR-0v-S24"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="X7q-5U-bYN" secondAttribute="bottom" id="eFH-VY-Qhr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X7q-5U-bYN" secondAttribute="trailing" constant="-20" id="fxV-qx-SO3"/>
+                            <constraint firstItem="X7q-5U-bYN" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="20" id="wvu-Ta-5B4"/>
+                            <constraint firstItem="X7q-5U-bYN" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="zJ2-ht-AhP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>

@@ -36,23 +36,20 @@ class SignInViewController: UIViewController {
             if granted{
                 let allAccounts = account.accountsWithAccountType(accountTypeTwitter)
                 if allAccounts.count <= 0 {
-                    print("no accounts")
+                    print("You need a Twitter account to access this info")
                 } else if allAccounts.count == 1 {
                     dispatch_async(dispatch_get_main_queue()
                         , { () -> Void in
                             self.performSegueWithIdentifier("SecondViewController", sender: allAccounts.first)
                     })
                 } else {
-                    print("They have more than one, lets ask")
                     dispatch_async(dispatch_get_main_queue()
                         , { () -> Void in
                              self.performSegueWithIdentifier("chooseAccountSegue", sender: allAccounts)
                     })
                    
                 }
-            } else {
-                print("Nah")
-            }
+            } 
         
         }
     }
