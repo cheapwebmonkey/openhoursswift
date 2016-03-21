@@ -99,6 +99,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="tableView" destination="oAB-uL-9YZ" id="itY-7c-YEk"/>
                         <segue destination="8rJ-Kc-sve" kind="show" id="57a-vs-Yze"/>
                     </connections>
                 </viewController>

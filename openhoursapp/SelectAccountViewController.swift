@@ -10,17 +10,30 @@ import UIKit
 import Accounts
 import Social
 
-class SelectAccountViewController: UIViewController {
+class SelectAccountViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var accounts = [ACAccount]()
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        print(self.accounts)
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
     }
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.accounts.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        let account = self.accounts[indexPath.row]
+        cell.textLabel?.text = account.username
+        return cell
+    }
 
 }
